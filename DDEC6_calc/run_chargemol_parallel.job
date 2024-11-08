@@ -1,0 +1,12 @@
+#!/bin/bash -l
+#SBATCH --ntasks-per-node=12
+#SBATCH --cpus-per-task=1
+#SBATCH -t 3:00:00
+#SBATCH --job-name=MOF808_DDEC
+#SBATCH --mem=20G
+#SBATCH --qos=lgagliardi
+#SBATCH --partition=lgagliardi-amd
+#SBATCH --account=pi-lgagliardi
+
+/project/lgagliardi/ray/packages/chargemol_09_26_2017/chargemol_FORTRAN_09_26_2017/compiled_binaries/linux/Chargemol_09_26_2017_linux_parallel
+echo "run complete on `hostname`: `date`" 1>&2

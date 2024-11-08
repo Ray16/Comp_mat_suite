@@ -1,0 +1,17 @@
+tolerance 2.5
+filetype xyz
+seed 12345
+
+# MOF structure
+structure CURRENT_STRUCTURE.xyz
+  number 1
+  inside box 0. 0. 0. 17.95246895 17.95246895 17.95246895
+end structure
+
+# Existing H2O molecules
+structure H2O.xyz
+  number NUM_H2O
+  inside sphere 0. 0. 0. 17.95246895 17.95246895 17.95246895
+end structure
+
+output OUTPUT_FILE_NAME.xyz
